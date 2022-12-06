@@ -1011,27 +1011,39 @@ def Task7():
             o = z.split("-")
             l.append(o[0])
             l.append(o[1])
-        print(l)
         if int(l[0]) >= int(l[2]) and int(l[0]) <= int(l[3]):
-            print("111111")
             if int(l[1]) >= int(l[2]) and int(l[1]) <= int(l[3]):
-                print("22222222")
                 j = j + 1
                 if int(l[2]) >= int(l[0]) and int(l[2]) <= int(l[1]):
-                    print("3333333")
                     if int(l[3]) >= int(l[0]) and int(l[3]) <= int(l[1]):
-                        print("4444444")
                         j = j -1
         if int(l[2]) >= int(l[0]) and int(l[2]) <= int(l[1]):
-            print("3333333")
             if int(l[3]) >= int(l[0]) and int(l[3]) <= int(l[1]):
-                print("4444444")
                 j = j + 1
+
+    return j
+
+def Task8():
+    j = 0
+    for x in b:
+        y = x.split(",")
+        l= []
+        for z in y:
+            o = z.split("-")
+            l.append(o[0])
+            l.append(o[1])
+        if int(l[0]) >= int(l[2]) and int(l[0]) <= int(l[3]):
+            j = j + 1
+        elif int(l[1]) >= int(l[2]) and int(l[1]) <= int(l[3]):
+            j = j + 1
+        elif int(l[2]) >= int(l[0]) and int(l[2]) <= int(l[1]):
+            j = j + 1
+        elif int(l[3]) >= int(l[0]) and int(l[3]) <= int(l[1]):
+            j = j + 1
 
     return j
 
 
 print(Task7())
 
-#if (((int(l[0]) >= int(l[2]) and int(l[0]) <= int(l[3])) and (int(l[1]) >= int(l[2]) and int(l[1]) <= int(l[3])) or ((int(l[2]) >= int(l[0]) and int(l[2]) <= int(l[1])) and (int(l[3]) >= int(l[0]) and int(l[3]) <= int(l[1])))):
-            #j = j + 1
+
