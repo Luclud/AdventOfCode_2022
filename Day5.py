@@ -519,8 +519,6 @@ print(pprint.pprint(cargo))
 def Task9():
     for c in b:
         o = c.split(" ")
-        x = cargo[o[3]]
-        y = cargo[o[5]]
         for d in range(int(o[1])):
             cargo[o[5]].insert(0,cargo[o[3]].pop(0))
     s = ""
@@ -533,8 +531,6 @@ def Task9():
 def Task10():
     for c in b:
         o = c.split(" ")
-        x = cargo[o[3]]
-        y = cargo[o[5]]
         for d in range(int(o[1])):
             cargo[o[5]].insert(d,cargo[o[3]].pop(0))
     s= ""
